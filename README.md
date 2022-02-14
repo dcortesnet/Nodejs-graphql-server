@@ -21,3 +21,15 @@ ejecutar comando
 ```
 npm install
 ```
+
+## Correr servidor
+
+```
+node index.js
+```
+
+## Equipo
+
+Desarrollado por Diego Cortés
+
+* dcortes.net@gmail.com
