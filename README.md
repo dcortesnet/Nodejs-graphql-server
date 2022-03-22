@@ -14,12 +14,12 @@ Servidor básico con la incorporación de Graphql para conocimientos personales 
 
 ## Conceptos básicos
 
-* Type definitions: Sistema de tipos que utiliza graphql para estructurar la información. Existen multiples tipos nativos que nos ayuda a representar los datos, URL: https://graphql.org/learn/schema/
-    * Object type : Representa objeto de datos
-    * Query type : Estructura de obtención de datos - Análogo REST GET
-    * Mutation type: Estructura de operaciones con datos - Análogo REST PUT,POST,PATCH y DELETE
-    * Enum type : Representa tipos escalar
-    * List type : Represeta matriz de valores
+* __Type definitions__: Sistema de tipos que utiliza graphql para estructurar la información. Existen multiples tipos nativos que nos ayuda a representar los datos, URL: https://graphql.org/learn/schema/
+    * __Object type__ : Representa objeto de datos
+    * __Query type__ : Estructura de obtención de datos - Análogo REST GET
+    * __Mutation type__: Estructura de operaciones con datos - Análogo REST PUT,POST,PATCH y DELETE
+    * __Enum type__ : Representa tipos escalar
+    * __List type__ : Represeta matriz de valores
 
 ## Instalación
 

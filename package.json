@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Diego Cortés",
   "license": "MIT",
   "dependencies": {
     "apollo-server": "^3.6.3",
