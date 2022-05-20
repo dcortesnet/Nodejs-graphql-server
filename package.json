@@ -1,11 +1,11 @@
 {
-  "name": "Nodejs-Graphql-server",
+  "name": "nodejs-graphql-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Servidor básico de GraphQL",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "Diego Cortés",

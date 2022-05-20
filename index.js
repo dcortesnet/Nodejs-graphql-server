@@ -1,23 +1,8 @@
 import { ApolloServer, gql } from "apollo-server";
+import * as fs from "fs";
 
-const persons = [
-  {
-    name: "John",
-    age: 20,
-    phone: "123-456-7890",
-    street: "123 Main St",
-    city: "Anytown",
-    id: "123-456-7890",
-  },
-  {
-    name: "Jane",
-    age: 22,
-    phone: "123-456-2123",
-    street: "123 Hook St",
-    city: "New York",
-    id: "123-456-7890",
-  },
-];
+const json = fs.readFileSync("./persons.db.json", "utf8");
+const persons = JSON.parse(json);
 
 const typeDefs = gql`
   type Person {
@@ -31,6 +16,7 @@ const typeDefs = gql`
   type Query {
     personsCount: Int
     getAllPersons: [Person]!
+    getPersonById(id: String!): Person
   }
 `;
 
@@ -38,6 +24,7 @@ const resolvers = {
   Query: {
     personsCount: () => persons.length,
     getAllPersons: () => persons,
+    getPersonById: (root, args) => persons.find((person) => person.id === args.id),
   },
 };
 
