@@ -23,6 +23,7 @@ const typeDefs = gql`
   type Mutation {
     createUser(name: String! phone: String age: Int! city: String!): User
     updateUser(id: String name: String phone: String age: Int city: String): User
+    deleteUser(id: String): User
   }
 `;
 
@@ -42,6 +43,14 @@ const resolvers = {
       let user = users.find((user) => user.id === args.id);
       if (user) {
         user = Object.assign(user, args);
+        return user;
+      }
+      return null;
+    },
+    deleteUser: (root, args) => {
+      let user = users.find((user) => user.id === args.id);
+      if (user) {
+        users.splice(users.indexOf(user), 1);
         return user;
       }
       return null;
