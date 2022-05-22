@@ -1,0 +1,18 @@
+[
+    {
+        "id": "507f1f77bcf86cd799439011",
+        "name": "John",
+        "age": 20,
+        "phone": "123-456-7890",
+        "street": "123 Main St",
+        "city": "Miami"
+    },
+    {
+        "id": "507f191e810c19729de860ea",
+        "name": "Jane",
+        "age": 22,
+        "phone": "334-159-2123",
+        "street": "123 Hook St",
+        "city": "New York"
+    }
+]
